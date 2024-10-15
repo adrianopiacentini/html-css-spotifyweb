@@ -6,12 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="web-app">
         <div class="web-top">
-            <div class="sidebar"></div>
+
+            <div class="sidebar">
+                <div class="sidebar-container">
+                    <div class="sidebar-top">
+                        <img class="logo" src="./img/logo.svg" alt="Spotify logo">
+                        <nav class="sidebar-nav">
+                            <ul class="sidebar-top-nav">
+                                <li class="nav-selected"><a href=""><img src="./img/home.svg" alt="Home Icon"> Home</a>
+                                </li>
+                                <li><a href=""><img src="./img/search.svg" alt="Search Icon"> Cerca</a></li>
+                                <li><a href=""><img src="./img/libreria.svg" alt="Library Icon"> La tua
+                                        libreria</a></li>
+                            </ul>
+                            <div class="nav-playlists">
+                                <div class="nav-playlist-title">PLAYLIST</div>
+                                <div class="nav-new-playlist">
+                                    <a href="">
+                                        <div class="add-btn"><i class="fa-solid fa-plus"></i></div> <span>Crea
+                                            Playlist</span>
+                                    </a>
+                                </div>
+                                <ul class="nav-playlists">
+                                    <li><a href="">Nome Playlist</a></li>
+                                    <li><a href="">Nome Playlist</a></li>
+                                    <li><a href="">Nome Playlist</a></li>
+                                    <li><a href="">Nome Playlist</a></li>
+                                    <li><a href="">Nome Playlist</a></li>
+                                    <li><a href="">Nome Playlist</a></li>
+                                    <li><a href="">Nome Playlist</a></li>
+                                </ul>
+                            </div>
+                        </nav class="sidebar-nav">
+                    </div>
+                    <div class="sidebar-bottom">
+                        <a class="download" href=""><img src="./img/download.svg" alt="Download Icon">
+                            &nbsp&nbspInstalla app</a>
+                        <hr>
+                        <div class="profile"><img src="./img/profile.svg" alt="Profile Icon"> &nbspJohn Doe</div>
+                    </div>
+                </div>
+            </div>
+
             <div class="content">
                 <header class="header"></header>
                 <div class="homepage"></div>
