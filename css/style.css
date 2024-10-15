@@ -48,7 +48,9 @@ ul {
 
 }
 
-
+.logo-mobile {
+    display: none;
+}
 
 .white {
     color: white;
@@ -205,8 +207,16 @@ ul.nav-playlists {
 /* Laptops & small screens */
 @media screen and (max-width:1024px) {}
 
+.logo-mobile {
+    display: none;
+}
+
 /* iPads and Tablets  */
 @media screen and (max-width:768px) {}
+
+.logo-mobile {
+    display: none;
+}
 
 /* Mobile Devices */
 @media screen and (max-width:480px) {
@@ -217,8 +227,57 @@ ul.nav-playlists {
         /* background-color: pink; */
     }
 
+    .header {
+        width: calc(100% - 50px);
+    }
+
     .content {
         width: calc(100% - 50px);
         height: 100%;
+    }
+
+    .sidebar span,
+    .nav-playlists,
+    .logo {
+        display: none;
+    }
+
+    .nav-selected {
+        border-left: none;
+        color: white;
+    }
+
+    .sidebar-top-nav li {
+        padding: 0;
+        margin: auto;
+    }
+
+    .sidebar-nav ul {
+        padding-top: 10px;
+    }
+
+    .logo-mobile {
+        display: block;
+        width: 50%;
+        margin: auto;
+        padding-top: 5px;
+    }
+
+    .sidebar hr {
+        display: none;
+    }
+
+    .sidebar-bottom {
+        margin: 0 auto;
+    }
+
+    .profile img {
+        width: 20px;
+        max-width: 300%;
+        justify-self: center;
+    }
+
+    .download img {
+        display: none;
     }
 }
