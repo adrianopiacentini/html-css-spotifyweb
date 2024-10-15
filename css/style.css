@@ -175,6 +175,22 @@ ul.nav-playlists {
     padding-bottom: 10px;
 }
 
+.sidebar .nav-new-playlist:hover{
+    color:white;
+}
+
+.sidebar li:hover {
+    
+    color:white;
+}
+.sidebar li:hover .add-btn{
+    background-color:white;
+}
+
+.sidebar span:hover{
+    color:white;
+}
+
 /* Content */
 .content {
     width: calc(100% - 220px);
