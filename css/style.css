@@ -60,3 +60,31 @@
     overflow:scroll;
     overflow-x:hidden;
 }
+
+/* Responsiveness */
+
+/* Laptops & small screens */
+@media screen and (max-width:1024px) {
+
+}
+
+/* iPads and Tablets  */
+@media screen and (max-width:768px) {
+
+}
+
+/* Mobile Devices */
+@media screen and (max-width:480px) {
+    .sidebar {
+        width:50px;
+        height:100%;
+        /* debug */
+        /* background-color: pink; */
+    }
+
+    .content {
+        width:calc(100% - 50px);
+        height:100%;
+    }
+}
+
