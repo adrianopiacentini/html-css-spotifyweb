@@ -175,26 +175,29 @@ ul.nav-playlists {
     padding-bottom: 10px;
 }
 
-.sidebar .nav-new-playlist:hover{
-    color:white;
+.sidebar .nav-new-playlist:hover {
+    color: white;
 }
 
 .sidebar li:hover {
-    
-    color:white;
-}
-.sidebar li:hover .add-btn{
-    background-color:white;
+
+    color: white;
 }
 
-.sidebar span:hover{
-    color:white;
+.sidebar li:hover .add-btn {
+    background-color: white;
+}
+
+.sidebar span:hover {
+    color: white;
 }
 
 /* Content */
 .content {
     width: calc(100% - 220px);
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header */
@@ -202,20 +205,40 @@ ul.nav-playlists {
     width: calc(100% - 220px);
     height: 80px;
     background-color: rgba(0, 0, 0, 0.8);
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
-    z-index: 999;
+    padding: 20px;
+    color: white;
+}
 
+.header a {
+    line-height: 40px;
+    position: absolute;
+    right: 20px;
+    font-weight: bolder;
+    font-size: 0.9em;
+    padding: 0px 30px;
+    border: 1px solid white;
+    border-radius: 20px;
+
+}
+
+.header a:hover {
+    transform: scale(1.1)
 }
 
 /* Homepage */
 .homepage {
+    padding-top: 80px;
     width: 100%;
     height: calc(100%);
     background-color: #141922;
     overflow: scroll;
     overflow-x: hidden;
+    flex-grow: 1;
+    /* debug */
+    /* background-color: white; */
 }
 
 /* Responsiveness */
