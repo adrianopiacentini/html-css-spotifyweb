@@ -241,6 +241,32 @@ ul.nav-playlists {
     /* background-color: white; */
 }
 
+.nav-homepage {
+    color:#7b7d82;
+    padding:20px;
+    font-weight:bold;
+    font-size:0.9em;
+}
+
+.nav-homepage ul {
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.nav-homepage-selected {
+    position:relative;
+}
+.nav-homepage-selected::after {
+    content: "";
+    width: 40%;
+    height: 0.15em;
+    background: #adff2f;
+    position: absolute;
+    bottom: -6px;
+    left: 30px;
+}
 /* Responsiveness */
 
 /* Laptops & small screens */
