@@ -242,22 +242,23 @@ ul.nav-playlists {
 }
 
 .nav-homepage {
-    color:#7b7d82;
-    padding:20px;
-    font-weight:bold;
-    font-size:0.9em;
+    color: #7b7d82;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
 }
 
 .nav-homepage ul {
-    display:flex;
+    display: flex;
     justify-content: center;
-    gap:20px;
-    flex-wrap:wrap;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .nav-homepage-selected {
-    position:relative;
+    position: relative;
 }
+
 .nav-homepage-selected::after {
     content: "";
     width: 40%;
@@ -267,21 +268,80 @@ ul.nav-playlists {
     bottom: -6px;
     left: 30px;
 }
+
+.main-content {
+    padding: 20px;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.col {
+    width: calc(100% / 6);
+    padding: 20px;
+    /* debug */
+    /* height:100px; */
+    /* border:1px solid white; */
+}
+
+.col-text {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.subtitle {
+    font-weight: bold;
+    color: #797c80;
+}
+
+.rec {
+    padding:20px 0;
+}
+
+.rec h2, .popular h2 {
+    padding-bottom:20px;
+}
+
+.popular img {
+    border-radius: 50%;
+}
+
 /* Responsiveness */
 
 /* Laptops & small screens */
-@media screen and (max-width:1024px) {}
+@media screen and (max-width:1024px) {
 
-.logo-mobile {
-    display: none;
+    .logo-mobile {
+        display: none;
+    }
+
+    .col {
+        width: calc(100% / 4)
+    }
 }
+
 
 /* iPads and Tablets  */
-@media screen and (max-width:768px) {}
 
-.logo-mobile {
-    display: none;
+@media screen and (max-width:768px) {
+    .logo-mobile {
+        display: none;
+    }
+
+    .col {
+        width: calc(100% / 2)
+    }
 }
+
 
 /* Mobile Devices */
 @media screen and (max-width:480px) {
@@ -345,4 +405,9 @@ ul.nav-playlists {
     .download img {
         display: none;
     }
+
+    .col {
+        width: calc(100% / 2)
+    }
+
 }
