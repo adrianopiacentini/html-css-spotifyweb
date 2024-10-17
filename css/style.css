@@ -19,6 +19,12 @@ ul {
     text-indent: 0;
 }
 
+hr {
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
 /* Layout */
 .web-app {
     width: 100%;
@@ -304,11 +310,12 @@ ul.nav-playlists {
 }
 
 .rec {
-    padding:20px 0;
+    padding: 20px 0;
 }
 
-.rec h2, .popular h2 {
-    padding-bottom:20px;
+.rec h2,
+.popular h2 {
+    padding-bottom: 20px;
 }
 
 .popular img {
@@ -316,31 +323,157 @@ ul.nav-playlists {
 }
 
 .nav-homepage li:hover {
-    color:white;
+    color: white;
 }
 
 .col-image {
-    position:relative;
+    position: relative;
 }
 
 .overlay {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, .6);
-    color:white;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size:60px;
+    font-size: 60px;
     z-index: -1;
 }
 
 .main-content .col:hover .overlay {
-    z-index:1;
+    z-index: 1;
 }
+
+.web-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    padding: 0 15px;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-content .artist-name {
+    color: #797c80;
+}
+
+
+.footer-content .left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+
+.footer-content .left img {
+    width: 40px;
+}
+
+.footer-content .left .song {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-content .left .btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #797c80;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.footer-content .right {
+    display: Flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.right .volume-bar-background {
+    width: 120px;
+
+    border-top: 5px solid #797c80;
+    border-radius: 10px;
+
+}
+
+.right .volume-bar-container {
+    position: relative;
+}
+
+.right .volume-bar {
+    width: 25%;
+    border-top: 5px solid white;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.center .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.center .btns .play {
+    font-size: 30px;
+}
+
+.center .volume {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.center .volume-bar-background {
+    width: 400px;
+    border-top: 5px solid #797c80;
+    border-radius: 10px;
+}
+
+.center .volume-bar-container {
+    position: relative;
+}
+
+.center .volume-bar {
+    width: 20%;
+    border-top: 5px solid white;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
 /* Responsiveness */
 
 /* Laptops & small screens */
