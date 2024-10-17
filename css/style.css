@@ -470,9 +470,33 @@ ul.nav-playlists {
     left: 0;
 }
 
+.left .song .artist-name:hover {
+    color: white;
+}
 
+.left .fav:hover {
+    color: white;
+}
 
+.left .add-playlist:hover {
+    color: white;
+}
 
+.center .btns .play:hover {
+    transform: scale(1.15)
+}
+
+.volume-bar-background:hover .volume-bar {
+    border-color: #adff2f
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
 
 /* Responsiveness */
 
@@ -500,13 +524,13 @@ ul.nav-playlists {
         width: calc(100% / 2)
     }
 
-    .center .volume-bar-background { 
-        width:150px;
+    .center .volume-bar-background {
+        width: 150px;
     }
 
     .footer-content .left .btns {
-        flex-direction:column;
-        gap:0px;
+        flex-direction: column;
+        gap: 0px;
     }
 }
 
@@ -579,11 +603,11 @@ ul.nav-playlists {
     }
 
     .footer-content .right {
-        gap:5px;
+        gap: 5px;
     }
 
     .right .volume-bar-background {
-        width:60px;
+        width: 60px;
     }
 
 }
